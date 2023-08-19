@@ -1,3 +1,11 @@
+Assets/Plugins/onnxruntime_providers_cuda.dll
+Assets/Plugins/onnxruntime_providers_cuda.dll.meta
+dnn_model_2_0_op11.onnx
+onnxruntime_providers_cuda.dll
+Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/content/dnn_model_2_0_op11.onnx
+Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/Microsoft.Azure.Kinect.BodyTracking.1.1.2.nupkg
+Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/lib/native/amd64/release/onnxruntime_providers_cuda.dll
+Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0.nupkg
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
