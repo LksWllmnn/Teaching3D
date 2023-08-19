@@ -10,16 +10,17 @@ A Repository for a Project to visualise real Classes in 3D with xr and cv techno
 3. Some of the Library Files from the Azure Kinect SDK for Unity are to big for GitHub. Get those 4 Files from [here](https://bwsyncandshare.kit.edu/s/D5qKpodrQWmnZog)
 from the Root Folder set those Files here:
 
-​```
-    Assets/Plugins/onnxruntime_providers_cuda.dll
-    Assets/Plugins/onnxruntime_providers_cuda.dll.meta
-    dnn_model_2_0_op11.onnx
-    onnxruntime_providers_cuda.dll
-    Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/content/dnn_model_2_0_op11.onnx
-    Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/Microsoft.Azure.Kinect.BodyTracking.1.1.2.nupkg
-    Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/lib/native/amd64/release/onnxruntime_providers_cuda.dll
-    Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0.nupkg
-​```
+
+```
+Assets/Plugins/onnxruntime_providers_cuda.dll
+Assets/Plugins/onnxruntime_providers_cuda.dll.meta
+dnn_model_2_0_op11.onnx
+onnxruntime_providers_cuda.dll
+Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/content/dnn_model_2_0_op11.onnx
+Packages/Microsoft.Azure.Kinect.BodyTracking.1.1.2/Microsoft.Azure.Kinect.BodyTracking.1.1.2.nupkg
+Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/lib/native/amd64/release/onnxruntime_providers_cuda.dll
+Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0.nupkg
+```
 
 4. In the Folder CalibrateInPy it is recommendet to set up a venv. OpenCV Version 4.6.0.66 is used. To build an .exe, pyinstaller was used. (Building an exe is nessesary to set this up in unity to calibrate the camera.) If you want to develop inside of the cailbration an you createt a new .exe, set this inside of the path 
 ```
