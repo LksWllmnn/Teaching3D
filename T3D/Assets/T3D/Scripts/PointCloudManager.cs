@@ -8,6 +8,7 @@ public class PointCloudManager : MonoBehaviour
     [SerializeField] GameObject _pc;
     [SerializeField] GameObject _pcEmpty;
     [SerializeField] CaliView _caliView;
+    [SerializeField] CalibrationData _calibrationData;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,11 @@ public class PointCloudManager : MonoBehaviour
             GameObject pc = Instantiate(_pc, _pcEmpty.transform);
             pc.GetComponent<pointcloud>().DeviceNumber = i;
             pc.GetComponent<pointcloud>().StartPC(_devices[i], CreateRandomRGBColor());
+            if(i == 1)
+            {
+                pc.transform.position += _calibrationData.Position;
+                pc.transform.Rotate(-_calibrationData.Rotation);
+            }
         }
         _caliView.StartView(_devices);
     }

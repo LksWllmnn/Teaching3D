@@ -53,12 +53,12 @@ def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coef
     tvecAll = []
 
     if len(corners) > 0:
-        if(len(ids) == 12): 
-            if(camIndex == 0): everyArucoCaptured0 = True
-            if(camIndex == 1): everyArucoCaptured1 = True
-        else:
-            if(camIndex == 0): everyArucoCaptured0 = False
-            if(camIndex == 1): everyArucoCaptured1 = False
+        # if(len(ids) == 12): 
+        #     if(camIndex == 0): everyArucoCaptured0 = True
+        #     if(camIndex == 1): everyArucoCaptured1 = True
+        # else:
+        #     if(camIndex == 0): everyArucoCaptured0 = False
+        #     if(camIndex == 1): everyArucoCaptured1 = False
 
 
         for i in range(0, len(ids)):

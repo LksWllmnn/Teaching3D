@@ -4,20 +4,12 @@ using System.Diagnostics;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
+using Unity.VisualScripting;
 
 public class CalibrateManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [InspectorLabel("Name of the exe to calibrate cameras (without .exe)")]
+    [SerializeField] string _nameExe;
 
     public void StartCalibrating()
     {
@@ -52,6 +44,6 @@ public class CalibrateManager : MonoBehaviour
 
     private void StartExe()
     {
-        Process.Start(Application.dataPath + "/T3D/exes/exeTest.exe");
+        Process.Start(Application.dataPath + $"/T3D/exes/{_nameExe}.exe");
     }
 }

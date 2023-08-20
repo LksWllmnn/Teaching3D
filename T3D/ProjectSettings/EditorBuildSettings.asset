@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/T3D/Scenes/Calibration.unity
+    guid: bb2942aaa3d6ec143bc2dbfc4df04e26
+  - enabled: 1
+    path: Assets/T3D/Scenes/TestMechanics.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
