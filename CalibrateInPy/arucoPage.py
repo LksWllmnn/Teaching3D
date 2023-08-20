@@ -1,3 +1,5 @@
+#code from here: https://betterprogramming.pub/getting-started-with-aruco-markers-b4823a43973c 20.08.23
+# create marker-page like this: python arucoPage.py -o "aruco_markers2.png" -i 0 -t "DICT_5X5_50" -d 72 --write-id -x 3 -y 4
 import argparse
 import cv2
 import sys
@@ -121,7 +123,7 @@ for i in range(0, y):
 		i_val = half_rest_y_m + i*size_m + i*margin_m + 2*i*text_size_m
 		j_val = half_rest_x_m + j*size_m + j*margin_m
 		tag = np.zeros((size_m, size_m, 1), dtype="uint8")
-		cv2.aruco.generateImageMarker(arucoDict, tag_id, size_m, tag, 1)
+		cv2.aruco.drawMarker(arucoDict, tag_id, size_m, tag, 1)
 		if write_id:
 			if "APRILTAG" in tag_type:
 				text_string = f"April id: {tag_id}"

@@ -22,7 +22,7 @@ Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/lib/native/amd64
 Packages/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0/Microsoft.Azure.Kinect.BodyTracking.ONNXRuntime.1.10.0.nupkg
 ```
 
-4. In the Folder CalibrateInPy it is recommendet to set up a venv. OpenCV Version 4.6.0.66 is used. To build an .exe, pyinstaller was used. (Building an exe is nessesary to set this up in unity to calibrate the camera.) If you want to develop inside of the cailbration an you createt a new .exe, set this inside of the path 
+4. In the Folder CalibrateInPy it is recommendet to set up a venv. OpenCV Version 4.5.5.64 is used (some examples are done with 4.6.0.66 so they maybe don't work). To build an .exe, pyinstaller was used. (Building an exe is nessesary to set this up in unity to calibrate the camera.) If you want to develop inside of the cailbration an you createt a new .exe, set this inside of the path 
 ```
 Assets/Plugins/T3D/exes/
 ```
