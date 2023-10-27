@@ -1,0 +1,3 @@
+[submodule "CalibrationWebSocket/athaeck-websocket-express-base"]
+	path = CalibrationWebSocket/athaeck-websocket-express-base
+	url = https://github.com/NickHaecker/athaeck-websocket-express-base.git
