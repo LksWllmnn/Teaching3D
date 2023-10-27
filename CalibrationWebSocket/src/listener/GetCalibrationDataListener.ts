@@ -29,7 +29,7 @@ class GetCalibrationDataListener extends BaseWebSocketListener {
         this._application.Free3DHooks.UnSubscribeListener(Free3DWebSocketEvents.UPDATE_CALIBRATION, this.OnUpdateCalibration.bind(this))
     }
     protected listener(body: any): void {
-        if(this._application.Free3DData === undefined){
+        if(this._application.Free3DData.GetId() === undefined){
             return
         }
 
