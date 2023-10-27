@@ -1,11 +1,12 @@
 @echo on
 
 cd ./CalibrationWebSocket
-start cmd /k  "SET PORT=3001 && npm run dev"
+start cmd /k  "npm install && SET PORT=3001 && npm run dev"
+
+timeout /t 10
 
 cd ../CalibrateInPy
-start cmd /k "python arucoPoseEstimation.py"
+start cmd /k "pip install opencv-python && python arucoPoseEstimation.py"
 
-
-cd ../
-echo Batch-Datei wurde erfolgreich beendet. > success.txt
+@REM cd ../
+@REM echo Batch-Datei wurde erfolgreich beendet. > success.txt
