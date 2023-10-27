@@ -1,0 +1,6 @@
+{
+    "extends": "./athaeck-websocket-express-base/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist", 
+    }
+  }
