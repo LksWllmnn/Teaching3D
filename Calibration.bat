@@ -2,7 +2,7 @@
 
 cd ./CalibrationWebSocket
 npm install
-SET PORT=3001 && npm run dev
+start /B cmd /C SET PORT=3001 && npm run dev
 
 cd ./CalibrateInPy
 python arucoPoseEstimation.py
