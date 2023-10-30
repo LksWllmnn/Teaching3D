@@ -7,7 +7,7 @@ img2 = cv.imread('chess1.jpg',cv.IMREAD_GRAYSCALE) # trainImage
 sift = cv.SIFT_create()
 
 # find the keypoints and descriptors with SIFT
-kp1, des1 = sift.detectAndCompute(img1,None)
+kp1, des1 = sift.
 kp2, des2 = sift.detectAndCompute(img2,None)
 
 # FLANN parameters

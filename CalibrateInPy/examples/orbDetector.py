@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
-img = cv.imread('chess.jpg', cv.IMREAD_GRAYSCALE)
+img = cv.imread('Assets/screenshot0.jpg', cv.IMREAD_GRAYSCALE)
 # Initiate ORB detector
 orb = cv.ORB_create()
 # find the keypoints with ORB
