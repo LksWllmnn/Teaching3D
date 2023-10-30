@@ -20,7 +20,8 @@ class GetCalibrationDataListener extends BaseWebSocketListener {
     }
 
     protected Init(): void {
-        this._application.Free3DHooks.SubscribeHookListener(Free3DWebSocketEvents.UPDATE_CALIBRATION, this.OnUpdateCalibration.bind(this))
+        const application = <Free3DWebSocketServer>this.webSocketServer
+        application.Free3DHooks.SubscribeHookListener(Free3DWebSocketEvents.UPDATE_CALIBRATION, this.OnUpdateCalibration.bind(this))
     }
     protected SetKey(): void {
         this.listenerKey = Free3DWebSocketEvents.GET_CALIBRATION
@@ -29,12 +30,12 @@ class GetCalibrationDataListener extends BaseWebSocketListener {
         this._application.Free3DHooks.UnSubscribeListener(Free3DWebSocketEvents.UPDATE_CALIBRATION, this.OnUpdateCalibration.bind(this))
     }
     protected listener(body: any): void {
-        if(this._application.Free3DData.GetId() === undefined){
+        if (this._application.Free3DData.GetId() === undefined) {
             return
         }
 
-        const response:ReceivedEvent = new ReceivedEvent(Free3DWebSocketEvents.On_UPDATE_CALIBRATION)
-        response.addData("CALIBRATION",this._application.Free3DData)
+        const response: ReceivedEvent = new ReceivedEvent(Free3DWebSocketEvents.On_UPDATE_CALIBRATION)
+        response.addData("CALIBRATION", this._application.Free3DData)
         this.webSocket.send(response.JSONString)
     }
 
