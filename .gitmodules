@@ -4,3 +4,5 @@
 [submodule "CalibrationWebSocket/athaeck-base-hooks"]
 	path = CalibrationWebSocket/athaeck-base-hooks
 	url = https://github.com/NickHaecker/athaeck-base-hooks.git
+[submodule "T3D/Assets/Library/athaeck-unity-library-scripts"]
+	url = https://github.com/NickHaecker/athaeck-unity-library-scripts.git
